@@ -1,0 +1,621 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+html{height:100%}
+body{line-height:1}
+ol,ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}
+
+body{
+  font-family: "HelveticaNeueCyr";
+  overflow-x: hidden;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+.container{
+  overflow: hidden;
+  max-width: 100vw;
+  margin: 0 5vw;
+}
+// Header
+
+.header{
+  width: 100vw;
+  height: 130px;
+  background: #2C2C2C;
+}
+.header__inner{
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 160px;
+  position: relative;
+  text-align: center;
+}
+.header__logo{
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+.header__info{
+color: #C3C3C3;
+ font: normal 400 1em/1em "HelveticaNeueCyr";
+ display: -webkit-flex;
+ display: -ms-flex;
+ display: flex;
+ justify-content: space-between;
+ padding: 25px 0;
+ max-width: 300px ;
+ margin: 0 auto;
+
+}
+// footer
+.footer{
+
+  background: #2C2C2C;
+  height: 48vh;
+  width: 100vw;
+}
+.footer_logo{
+  img{
+    width: 10vw;
+    height: 13vh;
+  }
+}
+.footer_inner{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:15vw;
+  padding: 3vw auto 7vw;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.footer_METTA_list.subtitle, .footer__ADDRESS_list.subtitle {
+  a{
+font-size: 0.8vw;
+  text-align: left;
+  color: #848484;
+}
+}
+.footer_METTA_title.title,.footer__ADDRESS_title.title {
+
+  color: #fff;
+  font-size: 0.8vw;
+  text-align-last: left;
+}
+
+.intro{
+  background: url("../img/page_product/intro_bg.jpg") center/100% 100% no-repeat;
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 7em;
+}
+.intro__img{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  img{
+  max-width: 1037px;
+  width: 100%;
+  height: 1131px;
+  object-fit: contain;
+  }
+}
+.title{
+   font: normal 700 4.2vw/1.188em "HelveticaNeueCyr";
+
+   color:#000000;
+   text-align: center;
+     text-transform: uppercase;
+}
+.subtitle{
+       font: normal 700 1.2vw/1.4em "HelveticaNeueCyr";
+    text-transform: uppercase;
+     color: #707070;
+     text-align: center;
+}
+.advantage{
+  margin-bottom: 120px;
+}
+.advantage__info{
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 60vw;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 114px;
+}
+.advantage_intro.subtitle{
+    max-width: 100%;
+    width: 100%;
+}
+.advantage_intro.title{
+  max-width: 44.271vw;
+  margin-bottom: 50px;
+}
+.card_title{
+font-size: 25px;
+font: normal 700 1.30vw/140% "HelveticaNeueCyr";
+color: #000000;
+}
+.card_subtitle{
+  font: normal 400 1.10vw/150% "HelveticaNeueCyr";
+  color: #707070;
+  text-align-last: left;
+}
+.advantage__card{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+  text-align-last: left;
+  background-color: #F5F5F7;
+}
+.card_img{
+width: 23.44vw;
+height: auto;
+object-fit: contain;
+padding-bottom: 50px;
+}
+.advantage__card_item{
+  margin-bottom: 20px;
+  max-width: 23.44vw;
+  width: 100%;
+}
+.advantage__card_item.card_subtitle li{
+  position: relative;
+}
+.advantage__card_item.card_subtitle li::before{
+  content: '';
+  position: absolute;
+  width: 7px;
+  height:7px;
+  background: #707070;
+  border-radius: 100%;
+  z-index: 1;
+   left: -20px;
+   top: 7px;
+}
+.advantage__card_inner{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+}
+.chois_chair{
+  max-width: 100vw;
+  width: 100%;
+  margin: 0 auto 10vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-gap: 3.787878787878788vh;
+}
+.active{
+  display: block;
+}
+.chois_chair_tabs_item.active{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.chois_chair_tabs_item{
+  display: none;
+  justify-content: center;
+  gap:50px;
+
+}
+.chois_chair_left, .chois_chair_tabs_right{
+  max-width: 26.042vw;
+  width: 100%;
+  height: 67vh;
+  border-radius: 5%;
+  background-color: #F5F5F7;
+  img{
+    width: 100%;
+    text-align: center;
+    height:100%;
+    object-fit: cover;
+    align-items: center;
+  }
+}
+
+.chois_chair_tabs_btn_item{
+  width: 1.8vw;
+  height: 1.8vw;
+}
+.chois_chair_tabs_btn{
+width: 1.667vw;
+height: 1.667vw;
+border-radius: 100%;
+border: none;
+margin: 4% 3%;
+cursor: pointer;
+}
+.chois_chair_tabs_btn.black{
+  background: #222222;
+}
+.chois_chair_tabs_btn.blue{
+  background: #0C54CA;
+}
+.chois_chair_tabs_btn.pink{
+  background: #483331;
+}
+.chois_chair_tabs_btn.brown{
+background: #917E65;
+}
+.chois_chair_tabs_btn.grey{
+  background: #AEA38F;
+}
+.chois_chair_tabs_btn.some_white{
+  background: #EDEAD9;
+}
+.chois_chair_tabs_btn.white{
+  background: #EEEEEE;
+}
+.chois_chair_tabs_btn_inner{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  max-width: 18.229vw;
+  justify-content:space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.chois_chair_tabs_btn_item.active{
+  outline: 0.2vw solid #08B9FF;
+  outline-offset: 0.1vw;
+  border-radius:100%;
+  transition: 0.3s;
+
+}
+.ergonimic{
+  max-width: 100vw;
+  width: 100%;
+  background:#2C2C2C;
+}
+.ergonimic_txt_inner{
+  margin: 0 12.821vw;
+  padding: 10vh 0;
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  height: 100vh;
+  grid-template-areas:
+  "ergonimic_txt ergonimic_txt ergonimic_img__right"
+  "none ergonimic_img__left ergonimic_img__right"
+  "none ergonimic_img__left ergonimic_img__right ";
+  grid-gap: 4vw;
+}
+.ergonimic_txt{
+  max-width: 100vw;
+  width: 100%;
+    grid-area:ergonimic_txt;
+}
+.ergonimic_txt.title{
+  font-size: 2.5vw;
+  line-height: 120%;
+
+}
+.ergonimic_txt.subtitle, .ergonimic_txt.title{
+  color: #FFFFFF;
+    text-align: left;
+}
+.ergonimic_txt.subtitle{
+font-size: 1vw;
+margin-bottom: 3vh;
+}
+.ergonimic_img__left{
+  grid-area: ergonimic_img__left;
+}
+.ergonimic_img__right{
+  grid-area: ergonimic_img__right;
+}
+.ergonimic_img__right, .ergonimic_img__left{
+  height: 70.71195652173913vh;
+  width: 25vw;
+  img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+  }
+}
+.end_product{
+width: 100vw;
+height: 105vh;
+background: url("../img/page_product/end_product.jpg") center/cover no-repeat;
+}
+.mainP_intro{
+ width: 100vw;
+ height:100vh;
+ background: url("../img/Fist_page/intro_bg.jpg") 0 50%/cover  no-repeat;
+ overflow: hidden;
+}
+.mainP_intro.title{
+  color: #fff;
+  text-align: left;
+  font-size: 3vw;
+  width: 27vw;
+padding-top:20% ;
+}
+.main_advantage_card{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8vh;
+}
+.main_advantage_item{
+  max-width: 18vw;
+  padding: 3vw 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  gap:1vw;
+}
+.main_advantage_item_title.title, .main_advantage_item_subtitle.subtitle{
+  font-size: 0.8vw;
+  text-align: left;
+
+}
+.main_advantage_item_img{
+height: auto;
+width: 5.5vw;
+  img{
+    width: 100%;
+    height: 100%;
+
+}
+}
+.main_advantage{
+  margin-bottom: 10vh;
+}
+.main_advantage_prewie_main{
+  position: relative;
+  img{
+    height: 67vw;
+    width: 45vw;
+  }
+
+}
+
+.main_advantage_prewie_small{
+  position: relative;
+  img{
+    width:40vw;
+    height: 32vw;
+
+  }
+}
+.main_advantage_prewie_txt{
+  position: absolute;
+  top: 2vw;
+  left: 2vw;
+  max-width: 15vw;
+}
+.main_advantage_prewie_txt_title.title{
+  color: #fff;
+  font-size:1.7vw;
+  text-align: left;
+  padding-bottom: 2vh;
+}
+.main_advantage_prewie_txt_subtitle.subtitle{
+  color: #fff;
+  font-size: 0.8vw;
+  text-align: left;
+
+}
+.main_advantage_prewie_small_img{
+}
+.main_advantage_previe{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+  "main small1"
+  "main small2";
+  justify-items:center;
+  grid-row-gap:2vh;
+}
+.main_advantage_prewie_main{
+  grid-area: main;
+}
+.main_advantage_prewie_small:first-child{
+  grid-area: small1;
+}
+.main_advantage_prewie_small:last-child{
+  grid-area: small2
+}
+.main_healty{
+  width: 100%;
+  height: 108vh;
+  background: url('../img/Fist_page/healty-chair.webp') center/contain no-repeat, linear-gradient(180deg, rgba(246,111,6,0) 0%, rgba(0,0,0,0) 68%, rgba(0,0,0,1) 68%);
+
+}
+.main_made_in{
+  background: black;
+  margin-bottom: 15vh;
+
+}
+.main_healty_title.title{
+  color: #707070;
+  font-size: 3vw;
+  text-align: left;
+  max-width: 28.8vw;
+
+}
+.main_made_in_inner{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+}
+.main_made_in_right, .main_made_in_left{
+  margin-bottom: 27vh;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items:center ;
+  max-width: 40vw;
+  width: 100%;
+
+   .title{
+     color:#C3C3C3;
+     text-align: left;
+      font-size: 1vw;
+      padding-top: 2  vh;
+   }
+   .subtitle{
+       color:#707070;
+       text-align: left;
+        font-size: 1vw;
+        padding-top: 2vh;
+   }
+   img{
+     width: 15vw;
+     height: 18vh;
+     object-fit: contain;
+     margin-right: 2.5vw
+   }
+
+}
+.main_guarantees{
+  margin-bottom: 13vh;
+}
+.main_guarantees_inner .title{
+  color: #707070;
+  text-align: left;
+  margin-bottom: 13vh;
+}
+.main_guarantees-up{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+}
+.main_guarantees_up_card:nth-child(1){
+  background: url("../img/Fist_page/main_guarantees/up1.webp")top/contain no-repeat;
+
+  li:nth-child(1){
+    padding-top: 57vh;
+
+  }
+}
+.main_guarantees_up_card:nth-child(2){
+  background: url("../img/Fist_page/main_guarantees/up2.webp")top/contain no-repeat;
+
+  li:nth-child(1){
+    padding-top: 50vh;
+
+  }
+}
+.main_guarantees_up_card:nth-child(3){
+  background: url("../img/Fist_page/main_guarantees/up3.webp")top/contain no-repeat;
+
+  li:nth-child(1){
+    padding-top: 52vh;
+
+  }
+}
+.main_guarantees-bottom{
+  ul{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-top: -30vh;
+    li{
+      img{
+        width: 25vw;
+      }
+      li:nth-child(1){
+        height: 108vh;
+      }
+      li:nth-child(2){
+        height: 125vh;
+      }
+      li:nth-child(3){
+        height: 100vh;
+      }
+    }
+  }
+}
+.main_guarantees_up_card{
+  max-width: 26vw;
+  min-height:120vh;
+  li{
+    padding-right: 2vw;
+    img{
+      height: 10vh;
+      width:5vw;
+      margin-bottom: 1.5vw;
+    }
+  }
+}
+.main_guarantees_up_card_title.title {
+font-size: 1.2vw;
+text-align: left;
+    margin-bottom: 1.5vw;
+}
+
+
+
+.main_guarantees_up_card_subtitle.subtitle {
+font-size: .8vw;
+text-align: left;
+    margin-bottom: 1.5vw;
+}
+.dealear{
+  background: black;
+}
+.dealear_inner{
+  margin-top: 10vh;
+}
+.dealear_title.title{
+  color: #fff;
+  text-align: left;
+}
+.dealear_item{
+  max-width: 18vw;
+  width: 100%;
+}
+.dealear_item .title{
+    font-size: .9vw;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 1vh;
+}
+.dealear_item .subtitle{
+color: #919191;
+font-size: 0.8vw;
+text-align: left;
+margin-bottom: 0.6vh;
+}
+.dealer_link{
+font-size: 0.8vw;
+color: #4BACFF;
+}
