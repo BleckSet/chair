@@ -498,7 +498,7 @@ a {
   grid-template-areas: "main small1"
  "main small2";
   justify-items: center;
-  grid-row-gap: 2vh; }
+   grid-gap: 20px 20px; }
 
 .main_advantage_prewie_main {
   -ms-grid-row: 1;
